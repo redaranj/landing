@@ -11,10 +11,10 @@ layout: default
 
 		<h2 class="content-heading">Your link to a stronger digital community</h2>
 
-		<img class="logo" src="/assets/images/logo.svg" />
+		<img class="logo" src="assets/images/logo.svg" />
 
 		<div class="button-container">
-			<a href="" class="call-to-action-link mod-inverse">Meet Our Team <img src="/assets/images/arrow-white.svg" alt="arrow pointing right" /></a>
+			<a href="#meet-our-team" class="call-to-action-link mod-inverse">Meet Our Team <img src="assets/images/arrow-white.svg" alt="arrow pointing right" /></a>
 		</div><!-- .button-container-->
 	</div><!-- .content -->
 </section>
@@ -28,7 +28,7 @@ layout: default
 		<p class="intro">We connect organizations and digital security experts to build tight-knit, secure civil societies.</p>
 
 		<div class="button-container">
-			<a href="" class="call-to-action-link">Get connected <img src="/assets/images/arrow-black.svg" alt="arrow pointing right" /></a>
+			<a href="" class="call-to-action-link">Get connected <img src="assets/images/arrow-black.svg" alt="arrow pointing right" /></a>
 		</div><!-- .button-container -->
 	</div><!-- .content -->
 </section>
@@ -44,8 +44,8 @@ layout: default
 				<div class="profile--header">
 					<div class="profile--image">
 						<img alt="Portrait Illustration of Holly Kilroy"
-							src="/assets/images/portrait-holly-90w.png"
-							srcset="/assets/images/portrait-holly-180w.png 180w"
+							src="assets/images/portrait-holly-90w.png"
+							srcset="assets/images/portrait-holly-180w.png 180w"
 							sizes="(max-width: 800px) 65px, 90px"
 						/>
 					</div>
@@ -71,8 +71,8 @@ layout: default
 				<div class="profile--header">
 					<div class="profile--image">
 						<img alt="Portrait Illustration of Josh Levy"
-							src="/assets/images/portrait-josh-56w.png"
-							srcset="/assets/images/portrait-josh-112w.png 112w"
+							src="assets/images/portrait-josh-56w.png"
+							srcset="assets/images/portrait-josh-112w.png 112w"
 							sizes="(max-width: 800px) 41px, 56px"
 						/>
 					</div>
@@ -98,8 +98,8 @@ layout: default
 				<div class="profile--header">
 					<div class="profile--image">
 						<img alt="Portrait Illustration of Mahmood Enayat"
-							src="/assets/images/portrait-mahmood-51w.png"
-							srcset="/assets/images/portrait-mahmood-102w.png 102w"
+							src="assets/images/portrait-mahmood-51w.png"
+							srcset="assets/images/portrait-mahmood-102w.png 102w"
 							sizes="(max-width: 800px) 40px, 51px"
 							/>
 					</div>
@@ -123,7 +123,7 @@ layout: default
 		</div><!-- .profiles -->
 
 		<div class="button-container">
-			<a href="" class="call-to-action-link">Contact us <img src="/assets/images/arrow-black.svg" alt="arrow pointing right" /></a>
+			<a href="" class="call-to-action-link">Contact us <img src="assets/images/arrow-black.svg" alt="arrow pointing right" /></a>
 		</div>
 	</div>
 </section>

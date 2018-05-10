@@ -284,7 +284,8 @@ p, dd, dt, li {
 
 @media screen and (max-width: $breakpoint-small) {
 	.page-section#intro {
-		padding-top: $padding-standard;
+		padding-top: $padding-standard*1.5;
+		padding-bottom: $padding-standard*1.5;
 
 		.logo {
 			width: 60%;
