@@ -18,7 +18,11 @@ $gray-extra-light: #FAFAFA;
 }
 
 // sizes, spacing
-$padding-standard: 50px;
+$padding-standard: 60px;
+
+// breakpoints (there are other custom ones, but these are the main ones for type sizes & spacing)
+$breakpoint-medium: 1000px;
+$breakpoint-small: 700px;
 
 /*******************************************************/
 /* RESET */
@@ -66,6 +70,7 @@ h3.content-heading {
 p {
 	font-weight: 400;
 	font-size: 1.2rem;
+	line-height: 1.45;
 
 	&:not(:last-child) {
 		margin-bottom: 1.25rem;
@@ -74,6 +79,7 @@ p {
 	&.intro {
 		font-size: 2.75rem;
 		font-weight: 700;
+		line-height: 1.33;
 	}
 }
 
@@ -89,6 +95,64 @@ p, dd, dt, li {
 	}
 }
 
+@media screen and (max-width: $breakpoint-medium) {
+	h1.content-heading {
+		font-size: 3.75rem;
+	}
+
+	h2.content-heading {
+		font-size: 2.25rem;
+	}
+
+	h3.content-heading {
+		font-size: 1.5rem;
+	}
+
+	p {
+		font-size: .95rem;
+
+		&.intro {
+			font-size: 2rem;
+			line-height: 1.65;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	h1.content-heading {
+		font-size: 2.5rem;
+	}
+
+	h2.content-heading {
+		font-size: 1.75rem;
+	}
+}
+
+@media screen and (max-width: $breakpoint-small) {
+	h3.content-heading {
+		font-size: 1rem;
+	}
+
+	p {
+		font-size: .75rem;
+
+		&.intro {
+			font-size: 1.25rem;
+			line-height: 1.7;
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	h1.content-heading {
+		font-size: 1.875rem;
+	}
+
+	h2.content-heading {
+		font-size: 1.25rem;
+	}
+}
+
 // recurring elements
 
 .bar {
@@ -98,6 +162,23 @@ p, dd, dt, li {
 
 	&.mod-inverse {
 		border-color: $white;
+	}
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+	.bar {
+		width: 65%;
+		border-width: 4px;
+		margin: 30px 0;
+	}
+}
+
+
+@media screen and (max-width: $breakpoint-small) {
+	.bar {
+		width: 80%;
+		border-width: 3px;
+		margin: 20px 0;
 	}
 }
 
@@ -119,6 +200,26 @@ p, dd, dt, li {
 
 	&:last-child {
 		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+	.page-section {
+		padding: 70px $padding-standard;
+	}
+
+	.button-container {
+		margin: $padding-standard/2 0;
+	}
+}
+
+@media screen and (max-width: $breakpoint-small) {
+	.page-section {
+		padding: 40px $padding-standard/2;
+	}
+
+	.button-container {
+		margin: $padding-standard/2 0;
 	}
 }
 
@@ -156,7 +257,6 @@ p, dd, dt, li {
 	}
 }
 
-// reponsive adjustments for intro section
 @media screen and (max-width: 1270px) {
 	.page-section#intro {
 
@@ -172,6 +272,41 @@ p, dd, dt, li {
 	}
 }
 
+@media screen and (max-width: $breakpoint-medium) {
+	.page-section#intro {
+		.content-heading,
+		.button-container {
+			width: 70%;
+		}
+	}
+}
+
+
+@media screen and (max-width: $breakpoint-small) {
+	.page-section#intro {
+		padding-top: $padding-standard;
+
+		.logo {
+			width: 60%;
+			right: -30px;
+			top: -80px;
+		}
+
+		.bar {
+			margin: $padding-standard/2 0;
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.page-section#intro {
+		.content-heading,
+		.button-container {
+			width: 100%;
+		}
+	}
+}
+
 .page-section#what-we-do {
 	background: $white;
 }
@@ -182,7 +317,19 @@ p, dd, dt, li {
 
 .page-footer {
 	background: $gray-light;
-	padding: $padding-standard;
+	padding: $padding-standard $padding-standard*2;
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+	.page-footer {
+		padding: $padding-standard;
+	}
+}
+
+@media screen and (max-width: $breakpoint-small) {
+	.page-footer {
+		padding: 30px;
+	}
 }
 
 // team profiles
@@ -191,12 +338,17 @@ p, dd, dt, li {
 	margin-top: $padding-standard * 2;
 	margin-left: -$padding-standard;
 	margin-right: -$padding-standard;
+	display: flex;
 }
 
 .profile {
 	background: $white;
 	padding: 35px;
 	box-shadow: 0 0 8px rgba($black, .1);
+
+	&:not(:nth-child(3)) {
+		margin-right: $padding-standard;
+	}
 }
 
 .profile--image {
@@ -229,6 +381,85 @@ p, dd, dt, li {
 	}
 }
 
+@media screen and (max-width: 1200px) {
+	.profile {
+		padding: 0;
+		background: transparent;
+		box-shadow: none;
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+	.profiles {
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: $padding-standard;
+	}
+
+	.profile--name {
+		font-size: 1.5rem;
+	}
+
+	.profile--title {
+		font-size: 1rem;
+	}
+
+	.profile--details {
+		font-size: .75rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	// stack profiles
+	.profiles {
+		display: block;
+		margin-top: 30px;
+	}
+
+	.profile {
+		margin-bottom: 40px;
+		margin-right: 0 !important;
+	}
+
+	.profile--header {
+		display: flex;
+		align-items: flex-end;
+		margin-bottom: 19px;
+	}
+
+	.profile--image {
+		margin-bottom: 0;
+		min-width: 80px;
+	}
+
+	.profile--title {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: $breakpoint-small) {
+	.profile--name {
+		font-size: 1rem;
+	}
+
+	.profile--title {
+		font-size: .75rem;
+	}
+
+	.profile--details {
+		font-size: 0.625rem;
+
+		dt {
+			margin-bottom: 7px;
+		}
+
+		dd {
+			margin-bottom: 20px;
+		}
+	}
+}
+
 // call to action links
 
 .call-to-action-link {
@@ -239,6 +470,10 @@ p, dd, dt, li {
 
 	img {
 		margin-left: 10px;
+		width: 16px;
+		vertical-align: middle;
+		position: relative;
+		top: -1px;
 	}
 
 	&:hover {
@@ -251,6 +486,30 @@ p, dd, dt, li {
 
 		&:hover {
 			border-bottom: 3px solid $white;
+		}
+	}
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+	.call-to-action-link {
+		font-size: .95rem;
+
+		img {
+			margin-left: 8px;
+		}
+
+		&:hover {
+			border-bottom: 2px solid black;
+		}
+	}
+}
+
+@media screen and (max-width: $breakpoint-small) {
+	.call-to-action-link {
+		font-size: 0.6875rem;
+
+		img {
+			margin-left: 6px;
 		}
 	}
 }

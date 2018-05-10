@@ -94,7 +94,7 @@ $grid--max-columns: 12;
 // Customizations for smaller screens
 
 // M screens
-@media screen and (max-width: $breakpoint-m) {
+@media screen and (max-width: $breakpoint-l) {
   .col {
     &.mod-medium-centered {
       margin-left: auto;

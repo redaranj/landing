@@ -14,7 +14,7 @@ layout: default
 		<img class="logo" src="/assets/images/logo.svg" />
 
 		<div class="button-container">
-			<a href="" class="call-to-action-link mod-inverse">Meet Our Team <img src="/assets/images/arrow-white.svg" width="16" alt="arrow pointing right" /></a>
+			<a href="" class="call-to-action-link mod-inverse">Meet Our Team <img src="/assets/images/arrow-white.svg" alt="arrow pointing right" /></a>
 		</div><!-- .button-container-->
 	</div><!-- .content -->
 </section>
@@ -28,7 +28,7 @@ layout: default
 		<p class="intro">We connect organizations and digital security experts to build tight-knit, secure civil societies.</p>
 
 		<div class="button-container">
-			<a href="" class="call-to-action-link">Get connected <img src="/assets/images/arrow-black.svg" width="16" alt="arrow pointing right" /></a>
+			<a href="" class="call-to-action-link">Get connected <img src="/assets/images/arrow-black.svg" alt="arrow pointing right" /></a>
 		</div><!-- .button-container -->
 	</div><!-- .content -->
 </section>
@@ -40,83 +40,90 @@ layout: default
 		<hr class="bar" />
 	
 		<div class="profiles">
-			<div class="row">
-				<div class="col span-4">
-					<div class="profile">
-						<img class="profile--image" alt="Portrait Illustration of Holly Kilroy"
+			<div class="profile">
+				<div class="profile--header">
+					<div class="profile--image">
+						<img alt="Portrait Illustration of Holly Kilroy"
 							src="/assets/images/portrait-holly-90w.png"
 							srcset="/assets/images/portrait-holly-180w.png 180w"
-							sizes="(max-width: 400px) 65px, 90px" />
+							sizes="(max-width: 800px) 65px, 90px"
+						/>
+					</div>
 
-						<hgroup>
-							<h1 class="profile--name">Holly Kilroy</h1>
-							<h2 class="profile--title">Executive Director</h2>
-						</hgroup>
+					<hgroup>
+						<h1 class="profile--name">Holly Kilroy</h1>
+						<h2 class="profile--title">Executive Director</h2>
+					</hgroup>
+				</div>
 
-						<p>Holly builds projects to address human rights and conflict issues. She previously worked at Crisis Action where she launched and led the Emerging Powers program. Prior to this, she helped set up Videre, where she spent four years as Head of Development, framing the need for safer, more effective video documentation and helping to launch projects around the world. Holly is currently the Programme Manager at Small Media & Co-Founder of @_securityfirst.</p>
+				<p>Holly builds projects to address human rights and conflict issues. She previously worked at Crisis Action where she launched and led the Emerging Powers program. Prior to this, she helped set up Videre, where she spent four years as Head of Development, framing the need for safer, more effective video documentation and helping to launch projects around the world. Holly is currently the Programme Manager at Small Media & Co-Founder of @_securityfirst.</p>
 
-						<dl class="profile--details">
-							<dt>Email</dt>
-							<dd><a href="mailto:holly@digiresilience.org">holly@digiresilience.org</a></dd>
+				<dl class="profile--details">
+					<dt>Email</dt>
+					<dd><a href="mailto:holly@digiresilience.org">holly@digiresilience.org</a></dd>
 
-							<dt>PGP Fingerprint</dt>
-							<dd>hE0DF 20C5 65D5 4DDD EC19 EFA7 2FE8 9DB3 F2DF 0D64 | <a href="">PGP Key</a></dd>
-						</dl>
-					</div><!-- .profile -->
-				</div><!-- .col -->
+					<dt>PGP Fingerprint</dt>
+					<dd>hE0DF 20C5 65D5 4DDD EC19 EFA7 2FE8 9DB3 F2DF 0D64 | <a href="">PGP Key</a></dd>
+				</dl>
+			</div><!-- .profile -->
 
-				<div class="col span-4">
-					<div class="profile">
-						<img class="profile--image" alt="Portrait Illustration of Josh Levy"
+			<div class="profile">
+				<div class="profile--header">
+					<div class="profile--image">
+						<img alt="Portrait Illustration of Josh Levy"
 							src="/assets/images/portrait-josh-56w.png"
 							srcset="/assets/images/portrait-josh-112w.png 112w"
-							sizes="(max-width: 400px) 41px, 56px" />
+							sizes="(max-width: 800px) 41px, 56px"
+						/>
+					</div>
+					
+					<hgroup>
+						<h1 class="profile--name">Josh Levy</h1>
+						<h2 class="profile--title">Technology Director</h2>
+					</hgroup>
+				</div>
 
-						<hgroup>
-							<h1 class="profile--name">Josh Levy</h1>
-							<h2 class="profile--title">Technology Director</h2>
-						</hgroup>
+				<p>Josh is a technologist and rights advocate. He oversees the development and implementation of the CDR Link platform and other aspects of CDR’s technical infrastructure. He is founder and director of Digital Security Exchange, the CDR’s U.S. community, and was previously advocacy director at Access Now and campaign director at Free Press, where he helped lead global efforts to protect free expression online, fight for privacy, secure strong open internet rules, and reign in government surveillance.</p>
 
-						<p>Josh is a technologist and rights advocate. He oversees the development and implementation of the CDR Link platform and other aspects of CDR’s technical infrastructure. He is founder and director of Digital Security Exchange, the CDR’s U.S. community, and was previously advocacy director at Access Now and campaign director at Free Press, where he helped lead global efforts to protect free expression online, fight for privacy, secure strong open internet rules, and reign in government surveillance.</p>
+				<dl class="profile--details">
+					<dt>Email</dt>
+					<dd><a href="mailto:josh@digiresilience.org">josh@digiresilience.org</a></dd>
 
-						<dl class="profile--details">
-							<dt>Email</dt>
-							<dd><a href="mailto:josh@digiresilience.org">josh@digiresilience.org</a></dd>
+					<dt>PGP Fingerprint</dt>
+					<dd>B56A D510 3142 2364 69C7 3961 A0A3 67A5 84C9 F275 | <a href="">PGP Key</a></dd>
+				</dl>
+			</div><!-- .profile -->
 
-							<dt>PGP Fingerprint</dt>
-							<dd>B56A D510 3142 2364 69C7 3961 A0A3 67A5 84C9 F275 | <a href="">PGP Key</a></dd>
-						</dl>
-					</div><!-- .profile -->
-				</div><!-- .col -->
-
-				<div class="col span-4">
-					<div class="profile">
-						<img class="profile--image" alt="Portrait Illustration of Mahmood Enayat"
+			<div class="profile">
+				<div class="profile--header">
+					<div class="profile--image">
+						<img alt="Portrait Illustration of Mahmood Enayat"
 							src="/assets/images/portrait-mahmood-51w.png"
 							srcset="/assets/images/portrait-mahmood-102w.png 102w"
-							sizes="(max-width: 400px) 40px, 51px" />
-						
-						<hgroup>
-							<h1 class="profile--name">Mahmood Enayat</h1>
-							<h2 class="profile--title">Community Development Director</h2>
-						</hgroup>
-						
-						<p>Mahmood is a media development expert and researcher. He is the founder of Small Media. He is the former Iran country director for the BBC World Service Trust and Iran Media Program of the University of Pennsylvania. Mahmood holds an M.A. in analysis, design and the implementation of informations systems from the London School of Economics as well as a B.Sc. in computer science with management from King’s College London.</p>
-						
-						<dl class="profile--details">
-							<dt>Email</dt>
-							<dd><a href="mailto:enayat@digiresilience.org">enayat@digiresilience.org</a></dd>
-						
-							<dt>PGP Fingerprint</dt>
-							<dd>6283 6741 A819 D7E9 47BC A244 E29A 85F5 C436 E8D0 | <a href="">PGP Key</a></dd>
-						</dl>
-					</div><!-- .profile -->
-				</div><!-- .col -->
-			</div><!-- .row -->
+							sizes="(max-width: 800px) 40px, 51px"
+							/>
+					</div>
+					
+					<hgroup>
+						<h1 class="profile--name">Mahmood Enayat</h1>
+						<h2 class="profile--title">Community Development Director</h2>
+					</hgroup>
+				</div>
+				
+				<p>Mahmood is a media development expert and researcher. He is the founder of Small Media. He is the former Iran country director for the BBC World Service Trust and Iran Media Program of the University of Pennsylvania. Mahmood holds an M.A. in analysis, design and the implementation of informations systems from the London School of Economics as well as a B.Sc. in computer science with management from King’s College London.</p>
+				
+				<dl class="profile--details">
+					<dt>Email</dt>
+					<dd><a href="mailto:enayat@digiresilience.org">enayat@digiresilience.org</a></dd>
+				
+					<dt>PGP Fingerprint</dt>
+					<dd>6283 6741 A819 D7E9 47BC A244 E29A 85F5 C436 E8D0 | <a href="">PGP Key</a></dd>
+				</dl>
+			</div><!-- .profile -->
 		</div><!-- .profiles -->
 
 		<div class="button-container">
-			<a href="" class="call-to-action-link">Contact us <img src="/assets/images/arrow-black.svg" width="16" alt="arrow pointing right" /></a>
+			<a href="" class="call-to-action-link">Contact us <img src="/assets/images/arrow-black.svg" alt="arrow pointing right" /></a>
 		</div>
 	</div>
 </section>
