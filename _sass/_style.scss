@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto:400,700,700i,900');
+
+/*******************************************************/
+/* VARIABLES & MIXINS */
+
+// colors
+$yellow: #FDDA29;
+$black: #000;
+$orange: #ED603A;
+$white: #fff;
+$gray-light: #F5F5F5;
+$gray-extra-light: #FAFAFA;
+
+// gradient
+@mixin gradient {
+	background: $orange;
+	background: linear-gradient(90deg, rgba($orange,1) 0%, rgba(#FDDA29,1) 100%);
+}
+
+// sizes, spacing
+$padding-standard: 50px;
+
+/*******************************************************/
+/* RESET */
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-size: 1rem;
+	font-weight: normal;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+	overflow-x: hidden;
+}
+
+/*******************************************************/
+/* DESIGN */
+
+// typography
+
+h1.content-heading {
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 5rem;
+}
+
+h2.content-heading {
+	font-family: Playfair Display;
+	font-weight: 900; 
+	font-size: 3.125rem;
+}
+
+h3.content-heading {
+	font-family: Playfair Display;
+	font-weight: 900;
+	font-size: 1.875rem;
+}
+
+p {
+	font-weight: 400;
+	font-size: 1.2rem;
+
+	&:not(:last-child) {
+		margin-bottom: 1.25rem;
+	}
+
+	&.intro {
+		font-size: 2.75rem;
+		font-weight: 700;
+	}
+}
+
+p, dd, dt, li {
+	a {
+		color: inherit;
+		font-weight: 700;
+		font-style: italic;
+
+		&:hover {
+			color: $orange;
+		}
+	}
+}
+
+// recurring elements
+
+.bar {
+	width: 40%;
+	border: 6px solid $black;
+	margin: 45px 0;
+
+	&.mod-inverse {
+		border-color: $white;
+	}
+}
+
+// generalized layout containers
+
+.page-section {
+	padding: 100px $padding-standard*2;
+}
+
+.content {
+	max-width: $max-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button-container {
+	text-align: right;
+	margin: $padding-standard 0;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+// design specifics - page sections
+
+.page-section#intro {
+	@include gradient;
+	color: $white;
+
+	.content-heading,
+	.button-container {
+		width: 50%;
+	}
+
+	.content {
+		position: relative;
+
+		// hack to get everything to show above logo
+		> * {
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+	.logo {
+		z-index: 0;
+		position: absolute;
+		top: -100px;
+		right: -250px;
+		height: 150%;
+	}
+
+	.bar {
+		margin: 60px 0;
+	}
+}
+
+// reponsive adjustments for intro section
+@media screen and (max-width: 1270px) {
+	.page-section#intro {
+
+		.content-heading,
+		.button-container {
+			width: 100%;
+		}
+
+		.logo {
+			height: auto;
+			width: 90%;
+		}
+	}
+}
+
+.page-section#what-we-do {
+	background: $white;
+}
+
+.page-section#meet-our-team {
+	background: $gray-extra-light;
+}
+
+.page-footer {
+	background: $gray-light;
+	padding: $padding-standard;
+}
+
+// team profiles
+
+.profiles {
+	margin-top: $padding-standard * 2;
+	margin-left: -$padding-standard;
+	margin-right: -$padding-standard;
+}
+
+.profile {
+	background: $white;
+	padding: 35px;
+	box-shadow: 0 0 8px rgba($black, .1);
+}
+
+.profile--image {
+	margin-bottom: 10px;
+}
+
+.profile--name {
+	font-family: Playfair Display;
+	font-weight: 900;
+	font-size: 1.875rem;
+}
+
+.profile--title {
+	font-weight: 700;
+	font-size: 1.25rem;
+	margin-bottom: 15px;
+}
+
+.profile--details {
+	font-size: 0.875rem;
+
+	dt {
+		font-weight: 700;
+		margin-bottom: 7px;
+	}
+
+	dd {
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+}
+
+// call to action links
+
+.call-to-action-link {
+	font-size: 1.35rem;
+	text-decoration: none;
+	font-weight: 400;
+	color: inherit;
+
+	img {
+		margin-left: 10px;
+	}
+
+	&:hover {
+		color: inherit;
+		border-bottom: 3px solid $black;
+	}
+
+	&.mod-inverse {
+		color: $white;
+
+		&:hover {
+			border-bottom: 3px solid $white;
+		}
+	}
+}
