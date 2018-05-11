@@ -28,7 +28,7 @@ layout: default
 		<p class="intro">We connect organizations and digital security experts to build tight-knit, secure civil societies.</p>
 
 		<div class="button-container">
-			<a href="" class="call-to-action-link">Get connected <img src="assets/images/arrow-black.svg" alt="arrow pointing right" /></a>
+			<a href="mailto:info@digiresilience.org" class="call-to-action-link">Get connected <img src="assets/images/arrow-black.svg" alt="arrow pointing right" /></a>
 		</div><!-- .button-container -->
 	</div><!-- .content -->
 </section>
@@ -56,14 +56,14 @@ layout: default
 					</hgroup>
 				</div>
 
-				<p>Holly builds projects to address human rights and conflict issues. She previously worked at Crisis Action where she launched and led the Emerging Powers program. Prior to this, she helped set up Videre, where she spent four years as Head of Development, framing the need for safer, more effective video documentation and helping to launch projects around the world. Holly is currently the Programme Manager at Small Media & Co-Founder of @_securityfirst.</p>
+				<p>Holly builds projects to address human rights and conflict issues. Before co-founding CDR she developed its first community iteration at Small Media. Holly also co-founded Security First, working on an app to make digital and physical security advice more accessible to human rights activists. She previously worked at Crisis Action where she launched and led the Emerging Powers program and also helped set up Videre where she framed the need for safer, more effective video documentation and helped to launch projects around the world.</p>
 
 				<dl class="profile--details">
 					<dt>Email</dt>
 					<dd><a href="mailto:holly@digiresilience.org">holly@digiresilience.org</a></dd>
 
 					<dt>PGP Fingerprint</dt>
-					<dd>hE0DF 20C5 65D5 4DDD EC19 EFA7 2FE8 9DB3 F2DF 0D64 | <a href="">PGP Key</a></dd>
+					<dd>hE0DF 20C5 65D5 4DDD EC19 EFA7 2FE8 9DB3 F2DF 0D64 | <a href="assets/pgp-keys/holly.txt" target="_blank">PGP Key</a></dd>
 				</dl>
 			</div><!-- .profile -->
 
@@ -90,7 +90,7 @@ layout: default
 					<dd><a href="mailto:josh@digiresilience.org">josh@digiresilience.org</a></dd>
 
 					<dt>PGP Fingerprint</dt>
-					<dd>B56A D510 3142 2364 69C7 3961 A0A3 67A5 84C9 F275 | <a href="">PGP Key</a></dd>
+					<dd>B56A D510 3142 2364 69C7 3961 A0A3 67A5 84C9 F275 | <a href="assets/pgp-keys/josh.txt" target="_blank">PGP Key</a></dd>
 				</dl>
 			</div><!-- .profile -->
 
@@ -117,13 +117,13 @@ layout: default
 					<dd><a href="mailto:enayat@digiresilience.org">enayat@digiresilience.org</a></dd>
 				
 					<dt>PGP Fingerprint</dt>
-					<dd>6283 6741 A819 D7E9 47BC A244 E29A 85F5 C436 E8D0 | <a href="">PGP Key</a></dd>
+					<dd>6283 6741 A819 D7E9 47BC A244 E29A 85F5 C436 E8D0 | <a href="assets/pgp-keys/mahmood.txt" target="_blank">PGP Key</a></dd>
 				</dl>
 			</div><!-- .profile -->
 		</div><!-- .profiles -->
 
 		<div class="button-container">
-			<a href="" class="call-to-action-link">Contact us <img src="assets/images/arrow-black.svg" alt="arrow pointing right" /></a>
+			<a href="mailto:info@digiresilience.org" class="call-to-action-link">Contact us <img src="assets/images/arrow-black.svg" alt="arrow pointing right" /></a>
 		</div>
 	</div>
 </section>
