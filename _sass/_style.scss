@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto:400,700,700i,900');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto:300i,400,700,700i,900');
 
 /*******************************************************/
 /* VARIABLES & MIXINS */
@@ -8,6 +8,9 @@ $yellow: #FDDA29;
 $black: #000;
 $orange: #ED603A;
 $white: #fff;
+$gray: #6C6C6C;
+$gray-medium: #EAEAEA;
+$gray-extra-medium: #CACACA;
 $gray-light: #F5F5F5;
 $gray-extra-light: #FAFAFA;
 
@@ -250,6 +253,14 @@ p, dd, dt, li {
 		top: -100px;
 		right: -250px;
 		height: 150%;
+	}
+
+	.logo-overflow{
+		z-index: 0;
+		position: absolute;
+		top: -100px;
+		right: -250px;
+		height: 336.5%;
 	}
 
 	.bar {
@@ -512,5 +523,120 @@ p, dd, dt, li {
 		img {
 			margin-left: 6px;
 		}
+	}
+}
+
+.page-section#signup {
+	padding-top: 75px;
+
+	.form-wrapper {
+		width: 45%;
+	}
+
+	.bar {
+		width: 85%;
+		margin-top: 40px;
+		margin-bottom: 24px;
+	}
+
+	p {
+		font-size: 17px;
+		margin-bottom: 6px;
+	}
+
+	.fine-print {
+		font-size: 12px;
+		font-weight: 200;
+		font-style: italic;
+		padding-top: 0px;
+		padding-bottom: 24px;
+	}
+	
+	.email {
+		font-size: 17px;
+		color: $black;
+		height: 40px;
+		width: 400px;
+		border: 0px;
+		box-shadow: 0px 0px 4px 2px $gray-medium;
+		padding: 8px;
+	}
+
+	div.mce_inline_error {
+		margin-top: 5px;
+		width: 400px;
+		background-color: $orange;
+	}
+
+	::placeholder {
+    color: $gray-extra-medium;
+    opacity: 1;
+	}	
+
+	.check-all {
+		font-size: 12px;
+		font-weight: 700;
+		font-style: italic;
+		padding-top: 36px;
+		padding-bottom: 0px;
+		padding-left: 24px;
+	}
+
+	ul {
+		list-style: none;
+		padding-left: 36px;
+		padding-bottom: 20px;
+
+		li {
+			font-size: 17px;
+			font-weight: 700;
+			padding: 10px;
+		}
+	}
+
+	input[type=checkbox] {
+    display: none;
+	}
+
+	.checkbox label:before {
+    border-radius: 3px;
+	}
+
+	input[type=checkbox]:checked {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: #f3f3f3;
+    text-align: center;
+    line-height: 15px;
+	}
+
+	.button {
+		background-color: $black;
+		border: 3px solid $black;
+		color: $white;
+		font-size: 18px;
+		font-weight: 500;
+		padding: 16px 32px;
+		border-radius: 100px;
+		margin: 0 auto;
+		display: inline-block;
+		transition: all .4s;
+
+		&:hover {
+			background-color: $gray;
+			border: 3px solid $gray;
+			padding: 16px 40px;
+		}
+	}
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+	
+}
+
+@media screen and (max-width: $breakpoint-small) {
+	.form-wrapper {
+		width: 100%;
 	}
 }
