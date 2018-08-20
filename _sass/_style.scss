@@ -13,6 +13,7 @@ $gray-medium: #EAEAEA;
 $gray-extra-medium: #CACACA;
 $gray-light: #F5F5F5;
 $gray-extra-light: #FAFAFA;
+$green: #66cc00;
 
 // gradient
 @mixin gradient {
@@ -568,10 +569,29 @@ p, dd, dt, li {
 		padding: 8px;
 	}
 
-	div.mce_inline_error {
+	.mce_inline_error {
 		margin-top: 5px;
 		width: 400px;
-		background-color: $orange;
+		color: $orange;
+		background-color: $white;
+	}
+
+	#mce-error-response {
+		color: $orange;
+		padding: 20px;
+
+		a {
+			color: $orange;
+		}
+	}
+
+	#mce-success-response {
+		color: $green;
+		padding: 20px;
+
+		a {
+			color: $green;
+		}
 	}
 
 	::placeholder {
