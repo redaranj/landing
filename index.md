@@ -38,7 +38,7 @@ layout: default
 		<h3 class="content-heading">Meet Our Team</h3>
 
 		<hr class="bar" />
-	
+
 		<div class="profiles">
 			<div class="profile">
 				<div class="profile--header">
@@ -76,10 +76,10 @@ layout: default
 							sizes="(max-width: 800px) 41px, 56px"
 						/>
 					</div>
-					
+
 					<hgroup>
 						<h1 class="profile--name">Josh Levy</h1>
-						<h2 class="profile--title">Technology Director</h2>
+						<h2 class="profile--title">Chief Technology Officer</h2>
 					</hgroup>
 				</div>
 
@@ -103,19 +103,19 @@ layout: default
 							sizes="(max-width: 800px) 40px, 51px"
 							/>
 					</div>
-					
+
 					<hgroup>
 						<h1 class="profile--name">Mahmood Enayat</h1>
 						<h2 class="profile--title">Community Development Director</h2>
 					</hgroup>
 				</div>
-				
+
 				<p>Mahmood is a media development expert and researcher. He is the founder of Small Media. He is the former Iran country director for the BBC World Service Trust and Iran Media Program of the University of Pennsylvania. Mahmood holds an M.A. in analysis, design and the implementation of informations systems from the London School of Economics as well as a B.Sc. in computer science with management from King’s College London.</p>
-				
+
 				<dl class="profile--details">
 					<dt>Email</dt>
 					<dd><a href="mailto:enayat@digiresilience.org">enayat@digiresilience.org</a></dd>
-				
+
 					<dt>PGP Fingerprint</dt>
 					<dd>6283 6741 A819 D7E9 47BC A244 E29A 85F5 C436 E8D0 | <a href="assets/pgp-keys/mahmood.txt" target="_blank">PGP Key</a></dd>
 				</dl>
