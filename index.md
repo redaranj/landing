@@ -67,7 +67,7 @@ layout: default
 				</dl>
 			</div><!-- .profile -->
 
-			<div class="profile">
+			<-- <div class="profile">
 				<div class="profile--header">
 					<div class="profile--image">
 						<img alt="Portrait Illustration of Josh Levy"
@@ -121,6 +121,8 @@ layout: default
 				</dl>
 			</div><!-- .profile -->
 		</div><!-- .profiles -->
+
+		-->
 
 		<div class="button-container">
 			<a href="mailto:info@digiresilience.org" class="call-to-action-link">Contact us <img src="assets/images/arrow-black.svg" alt="arrow pointing right" /></a>
