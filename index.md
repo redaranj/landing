@@ -94,17 +94,9 @@ layout: default
 				</dl>
 			</div><!-- .profile -->
 
-			<div class="profile">
-				<div class="profile--header">
-					<div class="profile--image">
-						<img alt="Portrait Illustration of Mahmood Enayat"
-							src="assets/images/portrait-mahmood-51w.png"
-							srcset="assets/images/portrait-mahmood-102w.png 102w"
-							sizes="(max-width: 800px) 40px, 51px"
-							/>
-					</div>
+			
 
-					
+
 		</div><!-- .profiles -->
 
 
