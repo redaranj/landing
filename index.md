@@ -83,7 +83,7 @@ layout: default
 					</hgroup>
 				</div>
 
-				<p>Josh is a technologist and rights advocate. He oversees the development and implementation of the CDR Link platform and other aspects of CDR’s technical infrastructure. He is founder and director of Digital Security Exchange, the CDR’s U.S. community, and was previously advocacy director at Access Now and campaign director at Free Press, where he helped lead global efforts to protect free expression online, fight for privacy, secure strong open internet rules, and reign in government surveillance.</p>
+				<p>Josh is a technologist and longtime digital rights advocate. He oversees the development and implementation of the CDR Link platform and other aspects of CDR’s technical infrastructure. He is founder and director of Digital Security Exchange, the CDR’s U.S. community, and was previously advocacy director at Access Now and campaign director at Free Press, where he helped lead global efforts to protect free expression online, fight for privacy, secure strong open internet rules, and reign in government surveillance.</p>
 
 				<dl class="profile--details">
 					<dt>Email</dt>
@@ -94,7 +94,7 @@ layout: default
 				</dl>
 			</div><!-- .profile -->
 
-			
+
 
 
 		</div><!-- .profiles -->
