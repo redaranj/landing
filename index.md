@@ -94,6 +94,32 @@ layout: default
 				</dl>
 			</div><!-- .profile -->
 
+			<div class="profile">
+						<div class="profile--header">
+							<div class="profile--image">
+								<img alt="Portrait Illustration of Jane Ellis"
+									src="assets/images/portrait-jane-56w.png"
+									srcset="assets/images/portrait-jane-112w.png 112w"
+									sizes="(max-width: 800px) 41px, 56px"
+								/>
+							</div>
+
+							<hgroup>
+								<h1 class="profile--name">Jane Ellis</h1>
+								<h2 class="profile--title">Chief Operating Officer</h2>
+							</hgroup>
+						</div>
+
+						<p>Jane Ellis is the Chief Operating Officer at CDR. She has over 15 years experience in international development and a Masters in Political Economy of Violence and Conflict from SOAS at the University of London. She was the Director of Programmes at Small Media for four years and previous to that worked in the humanitarian sector as a Director at the UK-based International Rescue Committee. Jane has worked on projects across the world and has extensive experience in programme management, strategic planning, and system implementation.</p>
+
+						<dl class="profile--details">
+							<dt>Email</dt>
+							<dd><a href="mailto:jane@digiresilience.org">jane@digiresilience.org</a></dd>
+
+							<!-- <dt>PGP Fingerprint</dt>
+							<dd>B56A D510 3142 2364 69C7 3961 A0A3 67A5 84C9 F275 | <a href="assets/pgp-keys/jane.txt" target="_blank">PGP Key</a></dd> -->
+						</dl>
+					</div><!-- .profile -->
 
 
 
