@@ -99,8 +99,8 @@ layout: default
 							<div class="profile--image">
 								<img alt="Portrait Illustration of Jane Ellis"
 									src="assets/images/portrait-jane-62w.png"
-									srcset="assets/images/portrait-jane-124w.png"
-									sizes="(max-width: 800px) 41px, 56px"
+									srcset="assets/images/portrait-jane-124w.png 124w"
+									sizes="(max-width: 800px) 41px, 62px"
 								/>
 							</div>
 
