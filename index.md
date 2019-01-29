@@ -100,7 +100,7 @@ layout: default
 								<img alt="Portrait Illustration of Jane Ellis"
 									src="assets/images/portrait-jane-96w.png"
 									srcset="assets/images/portrait-jane-192w.png 192w"
-									sizes="(max-width: 800px) 41px, 62px"
+									sizes="(max-width: 800px) 41px, 96px"
 								/>
 							</div>
 
