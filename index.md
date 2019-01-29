@@ -94,15 +94,15 @@ layout: default
 				</dl>
 			</div><!-- .profile -->
 
-		 <! -- <div class="profile">
+		<div class="profile">
 						<div class="profile--header">
 							<div class="profile--image">
 								<img alt="Portrait Illustration of Jane Ellis"
-									src="assets/images/portrait-jane.png"
-									srcset="assets/images/portrait-jane.png"
+									src="assets/images/portrait-jane-62w.png"
+									srcset="assets/images/portrait-jane-124w.png"
 									sizes="(max-width: 800px) 41px, 56px"
 								/>
-							</div> -->
+							</div>
 
 							<hgroup>
 								<h1 class="profile--name">Jane Ellis</h1>
