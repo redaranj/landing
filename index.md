@@ -110,7 +110,7 @@ layout: default
 							</hgroup>
 						</div>
 
-						<p>Jane Ellis is the Chief Operating Officer at CDR. She has over 15 years experience in international development and a Masters in Political Economy of Violence and Conflict from SOAS at the University of London. She was the Director of Programmes at Small Media for four years and previous to that worked in the humanitarian sector as a Director at the UK-based International Rescue Committee. Jane has worked on projects across the world and has extensive experience in programme management, strategic planning, and system implementation.</p>
+						<p>Jane has over 15 years experience in international development and a Masters in Political Economy of Violence and Conflict from SOAS at the University of London. She was the Director of Programmes at Small Media for four years and previous to that worked in the humanitarian sector as a Director at the UK-based International Rescue Committee. Jane has worked on projects across the world and has extensive experience in programme management, strategic planning, and system implementation.</p>
 
 						<dl class="profile--details">
 							<dt>Email</dt>
