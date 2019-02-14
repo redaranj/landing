@@ -125,8 +125,8 @@ layout: default
 					<div class="profile--header">
 						<div class="profile--image">
 							<img alt="Portrait Illustration of Ingrid Skoog"
-								src="assets/images/portrait-ingrid-56w.png"
-								srcset="assets/images/portrait-ingrid-112w.png 112w"
+								src="assets/images/portrait-ingrid-62w.png"
+								srcset="assets/images/portrait-ingrid-124w.png 112w"
 								sizes="(max-width: 800px) 41px, 56px"
 							/>
 						</div>
