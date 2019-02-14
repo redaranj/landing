@@ -95,7 +95,7 @@ layout: default
 			</div><!-- .profile -->
 
 	<div class="profile">
-				<div class="profile--header">
+				<div class="profile--header">	
 					<div class="profile--image">
 						<img alt="Portrait Illustration of Jane Ellis"
 							src="assets/images/portrait-jane-96w.png"
@@ -117,11 +117,11 @@ layout: default
 					<dd><a href="mailto:jane@digiresilience.org">jane@digiresilience.org</a></dd>
 
 					<dt>PGP Fingerprint</dt>
-							<dd>FF15 C1D3 DC51 3F80 CE7B 7750 D50B D419 8CF6 3A7D | <a href="assets/pgp-keys/jane.txt" target="_blank">PGP Key</a></dd>
+							<dd>34BD 0CC0 FEC7 6C6E 4450 149F E6D0 CAAC D375 91DF | <a href="assets/pgp-keys/jane.txt" target="_blank">PGP Key</a></dd>
 		</dl>
 		</div><!-- .profile -->
 
-			<!--	<div class="profile">
+				<div class="profile">
 					<div class="profile--header">
 						<div class="profile--image">
 							<img alt="Portrait Illustration of Ingrid Skoog"
@@ -137,7 +137,7 @@ layout: default
 						</hgroup>
 					</div>
 
-					<p>Josh is a technologist and longtime digital rights advocate. He oversees the development and implementation of the CDR Link platform and other aspects of CDR’s technical infrastructure. He is founder and director of Digital Security Exchange, the CDR’s U.S. community, and was previously advocacy director at Access Now and campaign director at Free Press, where he helped lead global efforts to protect free expression online, fight for privacy, secure strong open internet rules, and reign in government surveillance.</p>
+					<p>Ingrid translates complex security and privacy concepts into actionable measures people can understand and apply to their daily lives. Prior to joining CDR, Ingrid built a privacy program for a global for-profit organization creating policy and ensuring regulatory compliance.  She’s served on the Harvard University Committee on the Use of Human Subjects and advised researchers there on security risks. Ingrid also spent over a decade supporting various branches of the US Government in a variety of technical roles.</p>
 
 					<dl class="profile--details">
 						<dt>Email</dt>
