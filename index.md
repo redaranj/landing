@@ -116,8 +116,8 @@ layout: default
 							<dt>Email</dt>
 							<dd><a href="mailto:jane@digiresilience.org">jane@digiresilience.org</a></dd>
 
-							<!--<dt>PGP Fingerprint</dt>
-							<dd>B56A D510 3142 2364 69C7 3961 A0A3 67A5 84C9 F275 | <a href="assets/pgp-keys/jane.txt" target="_blank">PGP Key</a></dd> -->
+							<dt>PGP Fingerprint</dt>
+							<dd>FF15 C1D3 DC51 3F80 CE7B  7750 D50B D419 8CF6 3A7D | <a href="assets/pgp-keys/jane.txt" target="_blank">PGP Key</a></dd>
 						</dl>
 					</div><!-- .profile -->
 
