@@ -63,7 +63,7 @@ layout: default
 					<dd><a href="mailto:holly@digiresilience.org">holly@digiresilience.org</a></dd>
 
 					<dt>PGP Fingerprint</dt>
-					<dd>hE0DF 20C5 65D5 4DDD EC19 EFA7 2FE8 9DB3 F2DF 0D64 | <a href="assets/pgp-keys/holly.txt" target="_blank">PGP Key</a></dd>
+					<dd>E0DF 20C5 65D5 4DDD EC19 EFA7 2FE8 9DB3 F2DF 0D64 | <a href="assets/pgp-keys/holly.txt" target="_blank">PGP Key</a></dd>
 				</dl>
 			</div><!-- .profile -->
 
@@ -117,9 +117,36 @@ layout: default
 							<dd><a href="mailto:jane@digiresilience.org">jane@digiresilience.org</a></dd>
 
 							<dt>PGP Fingerprint</dt>
-							<dd>FF15 C1D3 DC51 3F80 CE7B  7750 D50B D419 8CF6 3A7D | <a href="assets/pgp-keys/jane.txt" target="_blank">PGP Key</a></dd>
+							<dd>FF15 C1D3 DC51 3F80 CE7B 7750 D50B D419 8CF6 3A7D | <a href="assets/pgp-keys/jane.txt" target="_blank">PGP Key</a></dd>
 						</dl>
 					</div><!-- .profile -->
+
+					<!-- <div class="profile">
+								<div class="profile--header">
+									<div class="profile--image">
+										<img alt="Portrait Illustration of Ingrid Skoog"
+											src="assets/images/portrait-ingrid-56w.png"
+											srcset="assets/images/portrait-ingrid-112w.png 112w"
+											sizes="(max-width: 800px) 41px, 56px"
+										/>
+									</div>
+
+									<hgroup>
+										<h1 class="profile--name">Ingrid Skoog</h1>
+										<h2 class="profile--title">Security Director</h2>
+									</hgroup>
+								</div>
+
+								<p>Josh is a technologist and longtime digital rights advocate. He oversees the development and implementation of the CDR Link platform and other aspects of CDR’s technical infrastructure. He is founder and director of Digital Security Exchange, the CDR’s U.S. community, and was previously advocacy director at Access Now and campaign director at Free Press, where he helped lead global efforts to protect free expression online, fight for privacy, secure strong open internet rules, and reign in government surveillance.</p>
+
+								<dl class="profile--details">
+									<dt>Email</dt>
+									<dd><a href="mailto:ingrid@digiresilience.org">ingrid@digiresilience.org</a></dd>
+
+									<dt>PGP Fingerprint</dt>
+									<dd>B56A D510 3142 2364 69C7 3961 A0A3 67A5 84C9 F275 | <a href="assets/pgp-keys/ingrid.txt" target="_blank">PGP Key</a></dd>
+								</dl>
+							</div><!-- .profile --> -->
 
 
 
