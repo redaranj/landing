@@ -71,8 +71,8 @@ layout: default
 				<div class="profile--header">
 					<div class="profile--image">
 						<img alt="Portrait Illustration of Josh Levy"
-							src="assets/images/portrait-josh-56w.png"
-							srcset="assets/images/portrait-josh-112w.png 112w"
+							src="assets/images/portrait-josh-59w.png"
+							srcset="assets/images/portrait-josh-118w.png 112w"
 							sizes="(max-width: 800px) 41px, 56px"
 						/>
 					</div>
