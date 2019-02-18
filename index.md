@@ -148,7 +148,7 @@ layout: default
 						<dd><a href="mailto:ingrid@digiresilience.org">ingrid@digiresilience.org</a></dd>
 
 						<dt>PGP Fingerprint</dt>
-						<dd>8002 168F D72E 7954 0F73 212E D93A 6416 3AB4 CD30 | <a href="assets/pgp-keys/ingrid.txt" target="_blank">PGP Key</a></dd>
+						<dd>34BD 0CC0 FEC7 6C6E 4450 149F E6D0 CAAC D375 91DF | <a href="assets/pgp-keys/ingrid.txt" target="_blank">PGP Key</a></dd>
 					</dl>
 				</div><!-- .profile -->
 
