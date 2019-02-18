@@ -104,6 +104,8 @@ layout: default
 						/>
 					</div>
 
+<br>
+
 					<hgroup>
 						<h1 class="profile--name">Jane Ellis</h1>
 						<h2 class="profile--title">Chief Operating Officer</h2>
