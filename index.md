@@ -66,6 +66,34 @@ layout: default
 					<dd>E0DF 20C5 65D5 4DDD EC19 EFA7 2FE8 9DB3 F2DF 0D64 | <a href="assets/pgp-keys/holly.txt" target="_blank">PGP Key</a></dd>
 				</dl>
 			</div><!-- .profile -->
+            
+            	<div class="profile">
+				<div class="profile--header">	
+					<div class="profile--image">
+						<img alt="Portrait Illustration of Jane Ellis"
+							src="assets/images/portrait-jane-96w.png"
+							srcset="assets/images/portrait-jane-192w.png 192w"
+							sizes="(max-width: 800px) 41px, 96px"
+						/>
+					</div>
+				
+	            
+                <hgroup>
+						<h1 class="profile--name">Jane Ellis</h1>
+						<h2 class="profile--title">Chief Operating Officer</h2>
+					</hgroup>
+				</div>
+
+				<p>Jane has over 15 years experience in international development and a Masters in Political Economy of Violence and Conflict from SOAS at the University of London. She was the Director of Programmes at Small Media for four years and previous to that worked in the humanitarian sector as a Director at the UK-based International Rescue Committee. Jane has worked on projects across the world and has extensive experience in programme management, strategic planning, and system implementation.</p>
+
+				<dl class="profile--details">
+					<dt>Email</dt>
+					<dd><a href="mailto:jane@digiresilience.org">jane@digiresilience.org</a></dd>
+
+					<dt>PGP Fingerprint</dt>
+							<dd>FF15 C1D3 DC51 3F80 CE7B 7750 D50B D419 8CF6 3A7D | <a href="assets/pgp-keys/jane.txt" target="_blank">PGP Key</a></dd>
+		</dl>
+		</div><!-- .profile -->
 
 	<div class="profile">
 				<div class="profile--header">
@@ -94,33 +122,7 @@ layout: default
 				</dl>
 			</div><!-- .profile -->
 <br>
-	<div class="profile">
-				<div class="profile--header">	
-					<div class="profile--image">
-						<img alt="Portrait Illustration of Jane Ellis"
-							src="assets/images/portrait-jane-96w.png"
-							srcset="assets/images/portrait-jane-192w.png 192w"
-							sizes="(max-width: 800px) 41px, 96px"
-						/>
-					</div>
-				
-	            
-                <hgroup>
-						<h1 class="profile--name">Jane Ellis</h1>
-						<h2 class="profile--title">Chief Operating Officer</h2>
-					</hgroup>
-				</div>
 
-				<p>Jane has over 15 years experience in international development and a Masters in Political Economy of Violence and Conflict from SOAS at the University of London. She was the Director of Programmes at Small Media for four years and previous to that worked in the humanitarian sector as a Director at the UK-based International Rescue Committee. Jane has worked on projects across the world and has extensive experience in programme management, strategic planning, and system implementation.</p>
-
-				<dl class="profile--details">
-					<dt>Email</dt>
-					<dd><a href="mailto:jane@digiresilience.org">jane@digiresilience.org</a></dd>
-
-					<dt>PGP Fingerprint</dt>
-							<dd>FF15 C1D3 DC51 3F80 CE7B 7750 D50B D419 8CF6 3A7D | <a href="assets/pgp-keys/jane.txt" target="_blank">PGP Key</a></dd>
-		</dl>
-		</div><!-- .profile -->
 
 				<div class="profile">
 					<div class="profile--header">
