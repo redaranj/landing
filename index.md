@@ -117,11 +117,7 @@ layout: default
 					<dd><a href="mailto:jane@digiresilience.org">jane@digiresilience.org</a></dd>
 
 					<dt>PGP Fingerprint</dt>
-<<<<<<< HEAD
-							<dd>34BD 0CC0 FEC7 6C6E 4450 149F E6D0 CAAC D375 91DF | <a href="assets/pgp-keys/jane.txt" target="_blank">PGP Key</a></dd>
-=======
 							<dd>FF15 C1D3 DC51 3F80 CE7B 7750 D50B D419 8CF6 3A7D | <a href="assets/pgp-keys/jane.txt" target="_blank">PGP Key</a></dd>
->>>>>>> 57cfb538003f4e7477331f1256fa9dc0ec5beb92
 		</dl>
 		</div><!-- .profile -->
 
@@ -148,7 +144,7 @@ layout: default
 						<dd><a href="mailto:ingrid@digiresilience.org">ingrid@digiresilience.org</a></dd>
 
 						<dt>PGP Fingerprint</dt>
-						<dd>B56A D510 3142 2364 69C7 3961 A0A3 67A5 84C9 F275 | <a href="assets/pgp-keys/ingrid.txt" target="_blank">PGP Key</a></dd>
+						<dd>8002 168F D72E 7954 0F73 212E D93A 6416 3AB4 CD30 | <a href="assets/pgp-keys/ingrid.txt" target="_blank">PGP Key</a></dd>
 					</dl>
 				</div><!-- .profile -->
 
