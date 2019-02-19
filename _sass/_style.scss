@@ -61,7 +61,7 @@ h1.content-heading {
 
 h2.content-heading {
 	font-family: Playfair Display;
-	font-weight: 900; 
+	font-weight: 900;
 	font-size: 3.125rem;
 }
 
@@ -356,13 +356,16 @@ p, dd, dt, li {
 	margin-top: $padding-standard * 2;
 	margin-left: -$padding-standard;
 	margin-right: -$padding-standard;
-	display: flex;
 }
 
 .profile {
 	background: $white;
 	padding: 35px;
 	box-shadow: 0 0 8px rgba($black, .1);
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  margin-bottom: $padding-standard;
 
 	&:not(:nth-child(3)) {
 		margin-right: $padding-standard;
@@ -438,6 +441,7 @@ p, dd, dt, li {
 	.profile {
 		margin-bottom: 40px;
 		margin-right: 0 !important;
+    width: auto;
 	}
 
 	.profile--header {
@@ -457,6 +461,15 @@ p, dd, dt, li {
 }
 
 @media screen and (max-width: $breakpoint-small) {
+  .profiles {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .profile {
+    width: auto;
+  }
+
 	.profile--name {
 		font-size: 1rem;
 	}
@@ -558,7 +571,7 @@ p, dd, dt, li {
 		padding-top: 0px;
 		padding-bottom: 24px;
 	}
-	
+
 	.email {
 		font-size: 17px;
 		color: $black;
@@ -597,7 +610,7 @@ p, dd, dt, li {
 	::placeholder {
     color: $gray-extra-medium;
     opacity: 1;
-	}	
+	}
 
 	.check-all {
 		font-size: 12px;
@@ -652,7 +665,7 @@ p, dd, dt, li {
 				background-color: $black;
 			}
 		}
-		
+
 		p {
 			position: absolute;
 			top: -1px;
