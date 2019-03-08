@@ -6,30 +6,26 @@ layout: default
 <section class="page-section" id="intro">
 	<div class="content">
 		<h1 class="content-heading">Center for Digital Resilience</h1>
-
 		<hr class="bar mod-inverse" />
-
-		<h2 class="content-heading">Your link to a stronger digital community</h2>
-
+		<h2 class="mission">Building resilient systems to keep civil society safe online</h2>
 		<img class="logo" src="assets/images/logo.svg" />
-
-		<div class="button-container">
-			<a href="#meet-our-team" class="call-to-action-link mod-inverse">Meet Our Team <img src="assets/images/arrow-white.svg" alt="arrow pointing right" /></a>
-		</div><!-- .button-container-->
 	</div><!-- .content -->
 </section>
 
 <section class="page-section" id="what-we-do">
 	<div class="content">
-		<h3 class="content-heading">What We Do</h3>
-
+		<h3 class="content-heading">Our work protects civil society and empowers activists to regain civic space.</h3>
 		<hr class="bar" />
+		<p>We believe digital security is a collective effort. We work with partners to bolster the digital strength and wellness of every individual within a community.</p>
+<p>We aim to not only ensure timely and effective responses for our communities, but to reduce their need for emergency response in the first place.</p>
+</div>
+</section>
 
-		<p class="intro">We connect organizations and digital security experts to build tight-knit, secure civil societies.</p>
-
-		<div class="button-container">
-			<a href="mailto:info@digiresilience.org" class="call-to-action-link">Get connected <img src="assets/images/arrow-black.svg" alt="arrow pointing right" /></a>
-		</div><!-- .button-container -->
+<section class="page-section" id="contact-us">
+	<div class="content">
+		<h3 class="content-heading">Strengthen the digital wellness of your community with CDR.</h3>
+    <p>Contact us to learn more about a tailored plan for your organization.</p>
+	  <a class="tell-me-more" href="mailto:info@digiresilience.org">Tell me more</a>
 	</div><!-- .content -->
 </section>
 
@@ -66,9 +62,9 @@ layout: default
 					<dd>E0DF 20C5 65D5 4DDD EC19 EFA7 2FE8 9DB3 F2DF 0D64 | <a href="assets/pgp-keys/holly.txt" target="_blank">PGP Key</a></dd>
 				</dl>
 			</div><!-- .profile -->
-            
+
             	<div class="profile">
-				<div class="profile--header">	
+				<div class="profile--header">
 					<div class="profile--image">
 						<img alt="Portrait Illustration of Jane Ellis"
 							src="assets/images/portrait-jane-96w.png"
@@ -76,8 +72,8 @@ layout: default
 							sizes="(max-width: 800px) 41px, 96px"
 						/>
 					</div>
-				
-	            
+
+
                 <hgroup>
 						<h1 class="profile--name">Jane Ellis</h1>
 						<h2 class="profile--title">Chief Operating Officer</h2>

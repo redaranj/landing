@@ -8,6 +8,7 @@ $yellow: #FDDA29;
 $black: #000;
 $orange: #ED603A;
 $white: #fff;
+$dark-gray: #3D3D3D;
 $gray: #6C6C6C;
 $gray-medium: #EAEAEA;
 $gray-extra-medium: #CACACA;
@@ -238,6 +239,27 @@ p, dd, dt, li {
 		width: 50%;
 	}
 
+  .mission {
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 45px;
+    color: $white;
+    letter-spacing: 0;
+    line-height: 60px;
+    width: 50%;
+    @media screen and (max-width: $breakpoint-medium) {
+      font-size: 36px;
+      line-height: 44px;
+		  width: 75%;
+    }
+    @media screen and (max-width: $breakpoint-small) {
+      font-size: 30px;
+      line-height: 36px;
+      width: 100%;
+    }
+  }
+
 	.content {
 		position: relative;
 
@@ -327,10 +349,123 @@ p, dd, dt, li {
 
 .page-section#what-we-do {
 	background: $white;
+
+  .content {
+    // hack to get everything to show above logo
+		> * {
+			position: relative;
+			z-index: 1;
+		}
+
+    .content-heading {
+      font-family: Playfair Display;
+      font-size: 58px;
+      font-weight: 900;
+      color: $black;
+      letter-spacing: 0;
+      z-index: 1;
+      @media screen and (max-width: $breakpoint-medium) {
+		    font-size: 44px;
+        line-height: 48px;
+	    }
+      @media screen and (max-width: $breakpoint-small) {
+        font-size: 36px;
+        line-height: 40px;
+      }
+    }
+
+    p {
+      font-family: Roboto;
+      font-size: 32px;
+      color: $dark-gray;
+      letter-spacing: 0;
+      line-height: 43px;
+      margin-left: 15%;
+      max-width: 700px;
+      margin-bottom: 24px;
+      @media screen and (max-width: $breakpoint-medium) {
+        margin-left: 8%;
+		    font-size: 28px;
+        line-height: 34px;
+	    }
+      @media screen and (max-width: $breakpoint-small) {
+        margin-left: 0px;
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
+.page-section#contact-us {
+  background: $gray-extra-light;
+  margin-bottom: 45px;
+  text-align: center;
+
+  .content {
+    .content-heading {
+      font-family: Playfair Display;
+      font-size: 37px;
+      font-weight: 900;
+      color: $black;
+      line-height: 43px;
+      letter-spacing: 0;
+      margin-bottom: 15px;
+      @media screen and (max-width: $breakpoint-medium) {
+        font-size: 32px;
+        line-height: 35px;
+      }
+      @media screen and (max-width: $breakpoint-small) {
+        font-size: 26px;
+        line-height: 29px;
+      }
+    }
+
+    p {
+      font-family: Roboto;
+      font-size: 24px;
+      font-weight: 400;
+      color: $black;
+      letter-spacing: 0.65px;
+      line-height: 28px;
+      margin-bottom: 60px;
+      @media screen and (max-width: $breakpoint-medium) {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 50px;
+      }
+      @media screen and (max-width: $breakpoint-small) {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .tell-me-more {
+      display: inline-block;
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 21px;
+      color: $white;
+      letter-spacing: 1.31px;
+      background-color: $orange;
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 10px 36px 10px 36px;
+      @media screen and (max-width: $breakpoint-medium) {
+        font-size: 18px;
+        padding: 8px 28px 8px 28px;
+      }
+      @media screen and (max-width: $breakpoint-small) {
+        font-size: 16px;
+        padding: 6px 24px 6px 24px;
+      }
+    }
+  }
 }
 
 .page-section#meet-our-team {
-	background: $gray-extra-light;
+	background: $white;
 }
 
 .page-footer {
