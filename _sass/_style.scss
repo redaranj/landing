@@ -241,13 +241,12 @@ p, dd, dt, li {
 
   .mission {
     font-family: Roboto;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 45px;
+    font-weight: 900;
+    font-size: 75px;
     color: $white;
     letter-spacing: 0;
-    line-height: 60px;
-    width: 50%;
+    text-align: center;
+    line-height: 94px;
     @media screen and (max-width: $breakpoint-medium) {
       font-size: 36px;
       line-height: 44px;
@@ -347,6 +346,60 @@ p, dd, dt, li {
 	}
 }
 
+.page-section#learn-more {
+	background-image: url(../images/protects-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .content {
+    // hack to get everything to show above logo
+		> * {
+			position: relative;
+			z-index: 1;
+		}
+
+    .content-heading {
+      font-family: Playfair Display;
+      font-weight: 900;
+      font-size: 45px;
+      color: $white;
+      letter-spacing: 0;
+      line-height: 60px;
+      z-index: 1;
+      @media screen and (max-width: $breakpoint-medium) {
+		    font-size: 44px;
+        line-height: 48px;
+	    }
+      @media screen and (max-width: $breakpoint-small) {
+        font-size: 36px;
+        line-height: 40px;
+      }
+    }
+
+    p {
+      font-family: Roboto;
+      font-size: 32px;
+      color: $dark-gray;
+      letter-spacing: 0;
+      line-height: 43px;
+      margin-left: 15%;
+      max-width: 700px;
+      margin-bottom: 24px;
+      @media screen and (max-width: $breakpoint-medium) {
+        margin-left: 8%;
+		    font-size: 28px;
+        line-height: 34px;
+	    }
+      @media screen and (max-width: $breakpoint-small) {
+        margin-left: 0px;
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
 .page-section#what-we-do {
 	background: $white;
 
@@ -396,6 +449,65 @@ p, dd, dt, li {
     }
   }
 }
+
+.page-section#partner-orgs {
+	background: $dark-gray;
+}
+
+.page-section#about {
+	background-image: url(../images/about-header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .content {
+    // hack to get everything to show above logo
+		> * {
+			position: relative;
+			z-index: 1;
+		}
+
+    .content-heading {
+      font-family: Playfair Display;
+      font-weight: 900;
+      font-size: 45px;
+      color: $white;
+      letter-spacing: 0;
+      line-height: 60px;
+      z-index: 1;
+      @media screen and (max-width: $breakpoint-medium) {
+		    font-size: 44px;
+        line-height: 48px;
+	    }
+      @media screen and (max-width: $breakpoint-small) {
+        font-size: 36px;
+        line-height: 40px;
+      }
+    }
+
+    p {
+      font-family: Roboto;
+      font-size: 32px;
+      color: $dark-gray;
+      letter-spacing: 0;
+      line-height: 43px;
+      margin-left: 15%;
+      max-width: 700px;
+      margin-bottom: 24px;
+      @media screen and (max-width: $breakpoint-medium) {
+        margin-left: 8%;
+		    font-size: 28px;
+        line-height: 34px;
+	    }
+      @media screen and (max-width: $breakpoint-small) {
+        margin-left: 0px;
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
 
 .page-section#contact-us {
   background: $gray-extra-light;
@@ -470,7 +582,15 @@ p, dd, dt, li {
 
 .page-footer {
 	background: $gray-light;
+  background-image: url(../images/footer-logo.svg);
+  background-position: left-bottom;
+  background-repeat: no-repeat;
 	padding: $padding-standard $padding-standard*2;
+
+  .content {
+    width: 50%;
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: $breakpoint-medium) {
