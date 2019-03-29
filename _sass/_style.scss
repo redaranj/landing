@@ -190,12 +190,12 @@ p, dd, dt, li {
 // generalized layout containers
 
 .header-section {
-	padding: 0px;
+  padding: 0px $padding-standard;
   height: 570px;
 
-  // @media screen and (max-width: $breakpoint-medium) {
-  //   height: 300px;
-  // }
+  @media screen and (max-width: $breakpoint-medium) {
+    height: 500px;
+  }
 }
 
 .page-section {
@@ -244,10 +244,16 @@ p, dd, dt, li {
   align-items: center;
   margin: 0px;
   padding: 50px 75px;
+  text-align: center;
 
   @media screen and (max-width: $breakpoint-medium) {
-      flex-direction: column;
-    }
+    flex-direction: column;
+    padding: 20px 30px;
+  }
+  @media screen and (max-width: $breakpoint-small) {
+    flex-direction: column;
+    padding: 20px 0px;
+  }
 
   .small-logo{
     margin-right: 22px;
@@ -317,16 +323,18 @@ p, dd, dt, li {
     line-height: 94px;
     margin-top: 80px;
     @media screen and (max-width: $breakpoint-medium) {
-      font-size: 36px;
-      line-height: 44px;
+      font-size: 45px;
+      line-height: 55px;
 		  width: 75%;
+      margin: 0px auto;
       margin-top: 0px;
       text-align: center;
     }
     @media screen and (max-width: $breakpoint-small) {
-      font-size: 30px;
-      line-height: 36px;
-      width: 90%;
+      font-size: 34px;
+      line-height: 40px;
+      width: 100%;
+      margin: 0px auto;
       margin-top: 0px;
     }
   }
@@ -347,6 +355,9 @@ p, dd, dt, li {
 		top: -200px;
 		right: -350px;
 		height: 375%;
+    @media screen and (max-width: $breakpoint-medium) {
+		  display: none;
+	  }
 	}
 
 	.logo-overflow{
@@ -424,11 +435,20 @@ p, dd, dt, li {
   background-repeat: no-repeat;
   background-size: cover;
   height: 735px;
+  @media screen and (max-width: $breakpoint-medium) {
+		height: 500px;
+	}
 
   .content {
     padding-top: 300px;
     max-width: 1000px;
     margin: 0px 0px 0px 40px;
+    @media screen and (max-width: $breakpoint-medium) {
+		  padding-top: 150px;
+	  }
+    @media screen and (max-width: $breakpoint-small) {
+		  padding-top: 50px;
+	  }
     // hack to get everything to show above logo
 		> * {
 			position: relative;
@@ -486,16 +506,26 @@ p, dd, dt, li {
     text-align: center;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     .content-item {
+      margin: 0px auto;
       max-width: 550px;
+
+      @media screen and (max-width: $breakpoint-medium) {
+		    margin-bottom: 30px;
+	    }
 
       div {
         height: 120px;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media screen and (max-width: $breakpoint-medium) {
+		      height: 70px;
+	      }
 
         img {
           position: relative;
@@ -514,14 +544,6 @@ p, dd, dt, li {
         line-height: 54px;
         text-transform: uppercase;
         z-index: 1;
-        @media screen and (max-width: $breakpoint-medium) {
-		      font-size: 44px;
-          line-height: 48px;
-	      }
-        @media screen and (max-width: $breakpoint-small) {
-          font-size: 36px;
-          line-height: 40px;
-        }
       }
 
     p {
@@ -533,14 +555,12 @@ p, dd, dt, li {
       line-height: 31px;
       margin-bottom: 24px;
       @media screen and (max-width: $breakpoint-medium) {
-        margin-left: 8%;
-		    font-size: 28px;
-        line-height: 34px;
+		    font-size: 19px;
+        line-height: 25px;
 	    }
       @media screen and (max-width: $breakpoint-small) {
-        margin-left: 0px;
-        font-size: 22px;
-        line-height: 26px;
+        font-size: 19px;
+        line-height: 25px;
       }
     }
     }
@@ -552,6 +572,10 @@ p, dd, dt, li {
   padding-top: 60px;
 
   .content {
+    @media screen and (max-width: $breakpoint-medium) {
+      padding-left: 30px;
+      padding-right: 30px;
+	  }
     .content-heading {
       font-family: Roboto;
       font-weight: 900;
@@ -561,6 +585,11 @@ p, dd, dt, li {
       margin-top: 40px;
       margin-bottom: 50px;
       max-width: 700px;
+      @media screen and (max-width: $breakpoint-medium) {
+		    font-size: 28px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+	    }
     }
   }
 }
@@ -589,12 +618,13 @@ p, dd, dt, li {
       text-transform: none;
       z-index: 1;
       @media screen and (max-width: $breakpoint-medium) {
-		    font-size: 44px;
-        line-height: 48px;
+        margin-top: 0px;
+		    font-size: 35px;
+        line-height: 45px;
 	    }
       @media screen and (max-width: $breakpoint-small) {
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 30px;
+        line-height: 35px;
       }
     }
 
@@ -633,6 +663,10 @@ p, dd, dt, li {
       font-size: 36px;
       color: $black;
       letter-spacing: 0;
+
+      @media screen and (max-width: $breakpoint-medium) {
+		    font-size: 26px;
+	    }
     }
 
     .bar {
@@ -640,6 +674,7 @@ p, dd, dt, li {
     }
 
     ul {
+      padding-left: 0px;
       margin: 80px 0px 0px 60px;
       display: flex;
       flex-direction: row;
@@ -647,6 +682,9 @@ p, dd, dt, li {
       list-style-type: none;
       max-width: 1000px;
       justify-content: space-evenly;
+      @media screen and (max-width: $breakpoint-medium) {
+		    margin: 60px 0px 0px 0px;
+	    }
 
       li {
         display: flex;
@@ -683,14 +721,17 @@ p, dd, dt, li {
       font-size: 36px;
       color: $white;
       letter-spacing: 0;
+      @media screen and (max-width: $breakpoint-medium) {
+		    font-size: 26px;
+	    }
     }
 
     .bar {
       width: 33%;
-
     }
 
     ul {
+      padding-left: 0px;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -810,6 +851,11 @@ p, dd, dt, li {
     line-height: 60px;
     text-transform: none;
     max-width: $max-width;
+
+    @media screen and (max-width: $breakpoint-medium) {
+      padding: 20px 0px;
+      font-size: 40px;
+    }
   }
 }
 
@@ -831,18 +877,31 @@ p, dd, dt, li {
 
   @media screen and (max-width: $breakpoint-medium + 100) {
     background-image: none;
+    height: 350px;
+  }
+  @media screen and (max-width: $breakpoint-small) {
+    height: 350px;
   }
 
   .content {
     width: 50%;
-    margin-right: 0;
+    margin-left: 50%;
     padding: 90px;
     vertical-align: middle;
     max-width: 800px;
 
     @media screen and (max-width: $breakpoint-medium + 100) {
-      padding: 60px;
-      width: 90%
+      margin: 0px auto;
+      padding: 20px;
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @media screen and (max-width: $breakpoint-small) {
+      padding: 0px;
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
     }
 
     .content-heading {
@@ -852,11 +911,20 @@ p, dd, dt, li {
       color: $black;
       letter-spacing: 0;
       line-height: 50px;
+      @media screen and (max-width: $breakpoint-medium) {
+        margin-top: 30px;
+		    font-size: 30px;
+        line-height: 40px;
+	    }
     }
 
     p {
       margin-top: 20px;
       margin-bottom: 40px;
+
+      @media screen and (max-width: $breakpoint-medium) {
+		    font-size: 16px;
+	    }
     }
 
     div {
@@ -875,6 +943,15 @@ p, dd, dt, li {
       padding-left: 20px;
       position: absolute;
       left: 0;
+
+      @media screen and (max-width: $breakpoint-medium) {
+		    font-size: 14px;
+        height: 30px;
+	    }
+      @media screen and (max-width: $breakpoint-small) {
+		    font-size: 12px;
+        height: 30px;
+	    }
     }
 
     .button {
@@ -892,13 +969,17 @@ p, dd, dt, li {
       padding: 10px 36px 10px 36px;
       position: absolute;
       right: 50px;
+
       @media screen and (max-width: $breakpoint-medium) {
-        font-size: 18px;
-        padding: 8px 28px 8px 28px;
+        font-size: 13px;
+        height: 30px;
+        padding: 2px 16px 2px 16px;
       }
       @media screen and (max-width: $breakpoint-small) {
-        font-size: 16px;
-        padding: 6px 24px 6px 24px;
+        font-size: 11px;
+        height: 30px;
+        padding: 2px 8px 2px 8px;
+        right: 30px;
       }
     }
     }
@@ -911,6 +992,9 @@ p, dd, dt, li {
   align-items: center;
   margin: 0px 0px 0px 60px;
   padding: 20px 0px 20px 0px;
+  @media screen and (max-width: $breakpoint-small) {
+		margin: 0px 0px 0px 0px;
+	}
 
   ul {
     display: flex;
