@@ -176,7 +176,6 @@ p, dd, dt, li {
 	.bar {
 		width: 65%;
 		border-width: 4px;
-		margin: 30px 0;
 	}
 }
 
@@ -185,7 +184,6 @@ p, dd, dt, li {
 	.bar {
 		width: 80%;
 		border-width: 3px;
-		margin: 20px 0;
 	}
 }
 
@@ -194,6 +192,10 @@ p, dd, dt, li {
 .header-section {
 	padding: 0px;
   height: 570px;
+
+  // @media screen and (max-width: $breakpoint-medium) {
+  //   height: 300px;
+  // }
 }
 
 .page-section {
@@ -243,8 +245,16 @@ p, dd, dt, li {
   margin: 0px;
   padding: 50px 75px;
 
+  @media screen and (max-width: $breakpoint-medium) {
+      flex-direction: column;
+    }
+
   .small-logo{
     margin-right: 22px;
+
+    @media screen and (max-width: $breakpoint-medium) {
+      margin-bottom: 14px;
+    }
   }
 
   h3 {
@@ -260,6 +270,12 @@ p, dd, dt, li {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    padding-left: 30px;
+
+    @media screen and (max-width: $breakpoint-medium) {
+      padding-left: 0px;
+      padding-top: 10px;
+    }
 
     a {
       font-family: Roboto;
@@ -304,11 +320,14 @@ p, dd, dt, li {
       font-size: 36px;
       line-height: 44px;
 		  width: 75%;
+      margin-top: 0px;
+      text-align: center;
     }
     @media screen and (max-width: $breakpoint-small) {
       font-size: 30px;
       line-height: 36px;
-      width: 100%;
+      width: 90%;
+      margin-top: 0px;
     }
   }
 
@@ -683,6 +702,10 @@ p, dd, dt, li {
       li {
         max-width: 200px;
 
+        @media screen and (max-width: $breakpoint-medium) {
+          margin-bottom: 50px;
+        }
+
         div {
           height: 80px;
         }
@@ -754,7 +777,7 @@ p, dd, dt, li {
     .tell-me-more {
       display: inline-block;
       font-family: Roboto;
-      font-weight: 500;
+      font-weight: 700;
       font-size: 16px;
       color: $white;
       letter-spacing: 1.31px;
@@ -806,12 +829,21 @@ p, dd, dt, li {
   height: 500px;
   vertical-align: middle;
 
+  @media screen and (max-width: $breakpoint-medium + 100) {
+    background-image: none;
+  }
+
   .content {
     width: 50%;
     margin-right: 0;
     padding: 90px;
     vertical-align: middle;
     max-width: 800px;
+
+    @media screen and (max-width: $breakpoint-medium + 100) {
+      padding: 60px;
+      width: 90%
+    }
 
     .content-heading {
       font-family: Playfair Display;
@@ -848,7 +880,7 @@ p, dd, dt, li {
     .button {
       display: inline-block;
       font-family: Roboto;
-      font-weight: 400;
+      font-weight: 700;
       font-size: 16px;
       height: 40px;
       color: $bright-orange;
