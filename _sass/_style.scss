@@ -7,6 +7,7 @@
 $yellow: #FDDA29;
 $black: #000;
 $orange: #ED603A;
+$bright-orange: #FF7115;
 $white: #fff;
 $dark-gray: #3D3D3D;
 $gray: #6C6C6C;
@@ -163,7 +164,7 @@ p, dd, dt, li {
 .bar {
 	width: 50%;
 	border: 6px solid $black;
-	margin: 45px 0;
+	margin: 45px auto;
 
 	&.mod-inverse {
 		border-color: $white;
@@ -188,6 +189,11 @@ p, dd, dt, li {
 }
 
 // generalized layout containers
+
+.header-section {
+	padding: 0px;
+  height: 570px;
+}
 
 .page-section {
 	padding: 100px $padding-standard*2;
@@ -228,9 +234,54 @@ p, dd, dt, li {
 	}
 }
 
+#top-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0px;
+  padding: 50px 75px;
+
+  .small-logo{
+    margin-right: 22px;
+  }
+
+  h3 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 900;
+    color: $white;
+    letter-spacing: 1.63px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+    a {
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: 700;
+      font-style: normal;
+      color: $white;
+      letter-spacing: 0.47px;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin: 0px 20px 0px 0px;
+      padding-bottom: 3px;
+    }
+
+    a.nav-selected {
+      border-bottom: 4px solid $white;
+    }
+  }
+}
+
 // design specifics - page sections
 
-.page-section#intro {
+.header-section#intro {
 	@include gradient;
 	color: $white;
 
@@ -241,13 +292,13 @@ p, dd, dt, li {
 
   .mission {
     font-family: Roboto;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 45px;
+    font-weight: 900;
+    font-size: 75px;
     color: $white;
     letter-spacing: 0;
-    line-height: 60px;
-    width: 50%;
+    text-align: center;
+    line-height: 94px;
+    margin-top: 80px;
     @media screen and (max-width: $breakpoint-medium) {
       font-size: 36px;
       line-height: 44px;
@@ -273,9 +324,9 @@ p, dd, dt, li {
 	.logo {
 		z-index: 0;
 		position: absolute;
-		top: -100px;
-		right: -250px;
-		height: 150%;
+		top: -200px;
+		right: -350px;
+		height: 375%;
 	}
 
 	.logo-overflow{
@@ -291,25 +342,25 @@ p, dd, dt, li {
 	}
 }
 
-@media screen and (max-width: 1270px) {
-	.page-section#intro {
+// @media screen and (max-width: 1270px) {
+// 	.page-section#intro {
 
-		.content-heading,
-		.button-container {
-			width: 100%;
-		}
+// 		.content-heading,
+// 		.button-container {
+// 			width: 100%;
+// 		}
 
-		.logo {
-			height: auto;
-			width: 90%;
-		}
+// 		.logo {
+// 			height: auto;
+// 			width: 90%;
+// 		}
 
-		.logo-overflow {
-			height: auto;
-			width: 50%;
-		}
-	}
-}
+// 		.logo-overflow {
+// 			height: auto;
+// 			width: 50%;
+// 		}
+// 	}
+// }
 
 @media screen and (max-width: $breakpoint-medium) {
 	.page-section#intro {
@@ -347,10 +398,17 @@ p, dd, dt, li {
 	}
 }
 
-.page-section#what-we-do {
-	background: $white;
+.page-section#learn-more {
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)), url(../images/protects-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 735px;
 
   .content {
+    padding-top: 300px;
+    max-width: 1000px;
+    margin: 0px 0px 0px 40px;
     // hack to get everything to show above logo
 		> * {
 			position: relative;
@@ -359,10 +417,156 @@ p, dd, dt, li {
 
     .content-heading {
       font-family: Playfair Display;
-      font-size: 58px;
       font-weight: 900;
+      font-size: 45px;
+      color: $white;
+      letter-spacing: 0;
+      line-height: 60px;
+      z-index: 1;
+      margin-bottom: 40px;
+      @media screen and (max-width: $breakpoint-medium) {
+		    font-size: 44px;
+        line-height: 48px;
+	    }
+      @media screen and (max-width: $breakpoint-small) {
+        font-size: 36px;
+        line-height: 40px;
+      }
+    }
+
+    p {
+      font-family: Roboto;
+      font-size: 32px;
+      color: $dark-gray;
+      letter-spacing: 0;
+      line-height: 43px;
+      margin-left: 15%;
+      max-width: 700px;
+      margin-bottom: 24px;
+      @media screen and (max-width: $breakpoint-medium) {
+        margin-left: 8%;
+		    font-size: 28px;
+        line-height: 34px;
+	    }
+      @media screen and (max-width: $breakpoint-small) {
+        margin-left: 0px;
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
+.page-section#what-we-do {
+	background: $white;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  .content {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .content-item {
+      max-width: 550px;
+
+      div {
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      .content-heading {
+        font-family: Roboto;
+        font-size: 22px;
+        font-weight: 900;
+        color: $black;
+        letter-spacing: 1.83px;
+        text-align: center;
+        line-height: 54px;
+        text-transform: uppercase;
+        z-index: 1;
+        @media screen and (max-width: $breakpoint-medium) {
+		      font-size: 44px;
+          line-height: 48px;
+	      }
+        @media screen and (max-width: $breakpoint-small) {
+          font-size: 36px;
+          line-height: 40px;
+        }
+      }
+
+    p {
+      text-align: left;
+      font-family: Roboto;
+      font-size: 19px;
       color: $black;
       letter-spacing: 0;
+      line-height: 31px;
+      margin-bottom: 24px;
+      @media screen and (max-width: $breakpoint-medium) {
+        margin-left: 8%;
+		    font-size: 28px;
+        line-height: 34px;
+	    }
+      @media screen and (max-width: $breakpoint-small) {
+        margin-left: 0px;
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+    }
+  }
+}
+
+.page-section#partner-orgs {
+	background: $dark-gray;
+  padding-top: 60px;
+
+  .content {
+    .content-heading {
+      font-family: Roboto;
+      font-weight: 900;
+      font-size: 36px;
+      color: $white;
+      letter-spacing: 0;
+      margin-top: 40px;
+      margin-bottom: 50px;
+      max-width: 700px;
+    }
+  }
+}
+
+.header-section#about {
+	background-image: url(../images/about-header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    text-align: center;
+
+    .content-heading {
+      font-family: Playfair Display;
+      font-weight: 900;
+      font-size: 45px;
+      color: $white;
+      margin-top: 70px;
+      letter-spacing: 0;
+      line-height: 60px;
+      text-transform: none;
       z-index: 1;
       @media screen and (max-width: $breakpoint-medium) {
 		    font-size: 44px;
@@ -392,6 +596,108 @@ p, dd, dt, li {
         margin-left: 0px;
         font-size: 22px;
         line-height: 26px;
+      }
+    }
+  }
+}
+
+.page-section#services {
+  text-align: center;
+
+  .content {
+    max-width: 1000px;
+
+    h3 {
+      font-family: Roboto;
+      font-weight: 900;
+      font-size: 36px;
+      color: $black;
+      letter-spacing: 0;
+    }
+
+    .bar {
+      width: 33%;
+    }
+
+    ul {
+      margin: 80px 0px 0px 60px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      list-style-type: none;
+      max-width: 1000px;
+      justify-content: space-evenly;
+
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 450px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+
+        div {
+          width: 60px;
+          text-align: center;
+        }
+
+        h5 {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+}
+
+.page-section#organizations {
+  background-color: $dark-gray;
+
+  .content {
+    max-width: 1000px;
+    margin: 0px auto;
+    text-align: center;
+
+    h3 {
+      font-family: Roboto;
+      font-weight: 900;
+      font-size: 36px;
+      color: $white;
+      letter-spacing: 0;
+    }
+
+    .bar {
+      width: 33%;
+
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      list-style-type: none;
+      justify-content: space-evenly;
+      margin-top: 70px;
+
+      li {
+        max-width: 200px;
+
+        div {
+          height: 80px;
+        }
+
+        img {
+          margin-bottom: 20px;
+        }
+
+        h4 {
+          font-family: Roboto;
+          font-weight: 900;
+          font-size: 16px;
+          color: $white;
+          letter-spacing: 1.09px;
+          line-height: 28px;
+          text-transform: uppercase;
+        }
       }
     }
   }
@@ -440,6 +746,8 @@ p, dd, dt, li {
         margin-bottom: 40px;
       }
     }
+  }
+}
 
     .tell-me-more {
       display: inline-block;
@@ -448,7 +756,7 @@ p, dd, dt, li {
       font-size: 21px;
       color: $white;
       letter-spacing: 1.31px;
-      background-color: $orange;
+      background-color: $bright-orange;
       text-decoration: none;
       border-radius: 999px;
       padding: 10px 36px 10px 36px;
@@ -461,16 +769,80 @@ p, dd, dt, li {
         padding: 6px 24px 6px 24px;
       }
     }
+
+.header-section#team {
+	@include gradient;
+	color: $white;
+  text-align: center;
+
+  .content-heading {
+    padding: 100px 0px;
+    font-family: Playfair Display;
+    font-weight: 900;
+    font-size: 45px;
+    color: $white;
+    letter-spacing: 0;
+    line-height: 60px;
+    text-transform: none;
+    max-width: $max-width;
   }
 }
 
 .page-section#meet-our-team {
 	background: $white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
 }
 
 .page-footer {
-	background: $gray-light;
-	padding: $padding-standard $padding-standard*2;
+  background: $gray-light;
+  background-image: url(../images/footer-logo.svg);
+  background-position: left-bottom;
+  background-repeat: no-repeat;
+  height: 500px;
+
+  .content {
+    width: 33%;
+    margin-right: 0;
+    padding: 30px;
+
+    .content-heading {
+      font-family: PlayfairDisplay-Black;
+      font-size: 40px;
+      color: $black;
+      letter-spacing: 0;
+      line-height: 50px;
+    }
+  }
+}
+
+.bottom-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px 0px 0px 60px;
+  padding: 20px 0px 20px 0px;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+    a {
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: 700;
+      font-style: normal;
+      color: $dark-gray;
+      letter-spacing: 0.47px;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin: 0px 25px 0px 0px;
+      padding-bottom: 3px;
+    }
+  }
 }
 
 @media screen and (max-width: $breakpoint-medium) {
@@ -488,9 +860,7 @@ p, dd, dt, li {
 // team profiles
 
 .profiles {
-	margin-top: $padding-standard * 2;
-	margin-left: -$padding-standard;
-	margin-right: -$padding-standard;
+	margin-top: $padding-standard;
 }
 
 .profile {
