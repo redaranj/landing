@@ -6,8 +6,8 @@
 						/>
   <h3>Center for Digital Resilience</h3>
   <ul>
-    <li><a href="/" {% if page.url == "/" %}class="nav-selected"{% endif %}>Home</a></li>
-    <li><a href="/about" {% if page.url == "/about.html" %}class="nav-selected"{% endif %}>About</a></li>
-    <li><a href="/team" {% if page.url == "/team.html" %}class="nav-selected"{% endif %}>Team</a></li>
+    <li><a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="nav-selected"{% endif %}>Home</a></li>
+    <li><a href="{{ site.baseurl }}/about" {% if page.url == "/about.html" %}class="nav-selected"{% endif %}>About</a></li>
+    <li><a href="{{ site.baseurl }}/team" {% if page.url == "/team.html" %}class="nav-selected"{% endif %}>Team</a></li>
   </ul>
 </nav>
