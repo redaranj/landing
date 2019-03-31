@@ -869,8 +869,11 @@ p, dd, dt, li {
   margin-top: 0px;
 
   .content {
-    border: 1px solid red;
     margin: 0px auto;
+    padding-left: 60px;
+    @media screen and (max-width: $breakpoint-medium) {
+      margin-left: 0px;
+    }
   }
 }
 
@@ -1113,20 +1116,24 @@ p, dd, dt, li {
 
 .profiles {
 	margin-top: $padding-standard;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
 }
 
 .profile {
+  max-width: 45%;
+  display: inline-block;
 	background: $white;
 	padding: 35px;
 	box-shadow: 0 0 8px rgba($black, .1);
-  width: 45%;
-  border: 1px solid red;
   vertical-align: top;
   margin-bottom: $padding-standard;
+  margin-right: 30px;
+  @media screen and (max-width: $breakpoint-medium) {
+    max-width: 100%;
+  }
 }
 
 .profile--image {
