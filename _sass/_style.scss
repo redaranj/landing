@@ -1309,6 +1309,36 @@ p, dd, dt, li {
 	}
 }
 
+div.mce_inline_error {
+  display: none !important;
+}
+
+#mce-EMAIL.mce_inline_error {
+  border: 0px !important;
+}
+
+#mce-error-response {
+		color: $orange;
+		padding: 20px;
+    position: absolute;
+    bottom: -120px;
+
+		a {
+			color: $orange;
+		}
+	}
+
+	#mce-success-response {
+		color: $green;
+		padding: 20px;
+    position: absolute;
+    bottom: -120px;
+
+		a {
+			color: $green;
+		}
+	}
+
 .page-section#signup {
 	padding-top: 75px;
 
@@ -1336,30 +1366,7 @@ p, dd, dt, li {
 		padding-bottom: 24px;
 	}
 
-	.mce_inline_error {
-		margin-top: 5px;
-		width: 400px;
-		color: $bright-orange;
-		background-color: $white;
-	}
 
-	#mce-error-response {
-		color: $orange;
-		padding: 20px;
-
-		a {
-			color: $orange;
-		}
-	}
-
-	#mce-success-response {
-		color: $green;
-		padding: 20px;
-
-		a {
-			color: $green;
-		}
-	}
 
 	::placeholder {
     color: $gray-extra-medium;
