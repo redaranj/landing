@@ -872,7 +872,7 @@ p, dd, dt, li {
     margin: 0px auto;
     padding-left: 60px;
     @media screen and (max-width: $breakpoint-medium) {
-      margin-left: 0px;
+      padding-left: 0px;
     }
   }
 }
